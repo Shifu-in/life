@@ -75,3 +75,11 @@ function showGymScreen() {
 function showWorkScreen() {
     alert('Work screen not implemented yet');
 }
+
+// Показ экрана загрузки на 2 секунды
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById('loading-screen').style.display = 'none';
+        document.getElementById('game-container').style.display = 'flex';
+    }, 2000);
+};
