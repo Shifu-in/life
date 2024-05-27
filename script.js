@@ -1,6 +1,6 @@
 const tg = window.Telegram.WebApp;
 tg.initDataUnsafe = {
-    "api": "7437233660:AAHzpHSEfjKRlpgS664aSnltSn7fgo9KVUo"
+    "api": "7271353347:AAHAjRDRlqWIDFBRFeNY42ajfJiidJO-bFM"
 };
 
 let experience = 0;
