@@ -1,5 +1,7 @@
 const tg = window.Telegram.WebApp;
-tg.ready();
+tg.initDataUnsafe = {
+    "api": "7437233660:AAHzpHSEfjKRlpgS664aSnltSn7fgo9KVUo"
+};
 
 let experience = 0;
 let money = 0;
