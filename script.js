@@ -16,27 +16,27 @@ document.getElementById('character-image').addEventListener('click', () => {
 });
 
 document.getElementById('make-money').addEventListener('click', () => {
-    showMiningScreen();
+    alert('Make money feature coming soon!');
 });
 
 document.getElementById('play').addEventListener('click', () => {
-    showGameScreen();
+    alert('Play feature coming soon!');
 });
 
 document.getElementById('settings').addEventListener('click', () => {
-    showSettingsScreen();
+    alert('Settings feature coming soon!');
 });
 
 document.getElementById('garage').addEventListener('click', () => {
-    showGarageScreen();
+    alert('Garage feature coming soon!');
 });
 
 document.getElementById('gym').addEventListener('click', () => {
-    showGymScreen();
+    alert('Gym feature coming soon!');
 });
 
 document.getElementById('work').addEventListener('click', () => {
-    showWorkScreen();
+    alert('Work feature coming soon!');
 });
 
 function updateExperience() {
@@ -54,34 +54,7 @@ function updateBalance() {
     balanceValue.innerText = money;
 }
 
-function showMiningScreen() {
-    alert('Mining screen not implemented yet');
-}
-
-function showGameScreen() {
-    alert('Game screen not implemented yet');
-}
-
-function showSettingsScreen() {
-    alert('Settings screen not implemented yet');
-}
-
-function showGarageScreen() {
-    alert('Garage screen not implemented yet');
-}
-
-function showGymScreen() {
-    alert('Gym screen not implemented yet');
-}
-
-function showWorkScreen() {
-    alert('Work screen not implemented yet');
-}
-
-// Показ экрана загрузки на 4 секунды
+// Initialize game on window load
 window.onload = function() {
-    setTimeout(function() {
-        document.getElementById('loading-screen').style.display = 'none';
-        document.getElementById('game-container').style.display = 'flex';
-    }, 4000);
+    document.getElementById('game-container').style.display = 'flex';
 };
