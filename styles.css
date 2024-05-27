@@ -87,3 +87,12 @@ body {
     margin-top: 20px;
     font-size: 20px;
 }
+
+#coin-video {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+}
