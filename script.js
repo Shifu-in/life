@@ -1,35 +1,77 @@
 const tg = window.Telegram.WebApp;
 tg.ready();
 
-document.getElementById('make-money').addEventListener('click', () => {
-    tg.MainButton.setText("Mining...");
-    tg.MainButton.show();
-    // Логика майнинга монет
+let experience = 0;
+let money = 0;
+
+document.getElementById('character-image').addEventListener('click', () => {
+    experience += 1;
+    money += 1;
+
+    updateExperience();
+    updateMoney();
+    updateBalance();
 });
 
-document.getElementById('character').addEventListener('click', () => {
-    const scoreElement = document.getElementById('score-value');
-    let score = parseInt(scoreElement.innerText);
-    score += 1;
-    scoreElement.innerText = score;
+document.getElementById('make-money').addEventListener('click', () => {
+    showMiningScreen();
 });
 
 document.getElementById('play').addEventListener('click', () => {
-    // Логика игры
+    showGameScreen();
 });
 
 document.getElementById('settings').addEventListener('click', () => {
-    // Настройки игры
+    showSettingsScreen();
 });
 
 document.getElementById('garage').addEventListener('click', () => {
-    // Логика гаража
+    showGarageScreen();
 });
 
 document.getElementById('gym').addEventListener('click', () => {
-    // Логика тренажерного зала
+    showGymScreen();
 });
 
 document.getElementById('work').addEventListener('click', () => {
-    // Логика работы
+    showWorkScreen();
 });
+
+function updateExperience() {
+    const progress = document.getElementById('experience-progress');
+    progress.style.width = `${experience}%`;
+}
+
+function updateMoney() {
+    const progress = document.getElementById('money-progress');
+    progress.style.width = `${money}%`;
+}
+
+function updateBalance() {
+    const balanceValue = document.getElementById('balance-value');
+    balanceValue.innerText = money;
+}
+
+function showMiningScreen() {
+    alert('Mining screen not implemented yet');
+}
+
+function showGameScreen() {
+    alert('Game screen not implemented yet');
+}
+
+function showSettingsScreen() {
+    alert('Settings screen not implemented yet');
+}
+
+function showGarageScreen() {
+    alert('Garage screen not implemented yet');
+}
+
+function showGymScreen() {
+    alert('Gym screen not implemented yet');
+}
+
+function showWorkScreen() {
+    alert('Work screen not implemented yet');
+}
