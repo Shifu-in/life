@@ -9,23 +9,6 @@ body {
     overflow: hidden;
 }
 
-#loading-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#loading-video {
-    width: 100%;
-    height: auto;
-}
-
 #game-container {
     display: flex;
     flex-direction: column;
