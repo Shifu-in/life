@@ -6,21 +6,37 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
+}
+
+#loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #game-container {
-    background: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
-    width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    width: 90%;
+    margin-top: 20px;
 }
 
 #experience-bar, #money-bar {
@@ -39,12 +55,25 @@ body {
     transition: width 0.3s ease;
 }
 
-#character-container {
+#background {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#background img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#character-container {
+    position: relative;
 }
 
 #character-container img {
@@ -75,9 +104,17 @@ body {
     font-size: 24px;
 }
 
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 #menu button {
     display: block;
-    width: 100%;
+    width: 90%;
     margin: 10px 0;
     padding: 10px;
     font-size: 16px;
@@ -86,13 +123,4 @@ body {
 #score {
     margin-top: 20px;
     font-size: 20px;
-}
-
-#coin-video {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 100px;
-    height: 100px;
-    pointer-events: none;
 }
