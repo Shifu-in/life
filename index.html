@@ -8,8 +8,20 @@
 </head>
 <body>
     <div id="game-container">
-        <div id="character">
-            <img src="character.png" alt="Character" id="character-image">
+        <div id="header">
+            <div id="experience-bar">
+                <div id="experience-progress"></div>
+            </div>
+            <div id="money-bar">
+                <div id="money-progress"></div>
+            </div>
+        </div>
+        <div id="character-container">
+            <img src="character.jpg" alt="Character" id="character-image">
+        </div>
+        <div id="balance">
+            <img src="balance-icon.png" alt="Balance Icon">
+            <div id="balance-value">0</div>
         </div>
         <div id="menu">
             <button id="make-money">Make $$$</button>
@@ -19,7 +31,9 @@
             <button id="gym">Gym</button>
             <button id="work">Work</button>
         </div>
-        <div id="score">Score: <span id="score-value">0</span></div>
+        <div id="score">
+            Score: <span id="score-value">0</span>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
